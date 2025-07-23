@@ -8,7 +8,20 @@ def test_example():
 
 def test_no_digits():
     assert max_digit_sum(["abc", "xyz"]) == 0
-    
+def test_exceeds_limit():
+    try:
+        max_digit_sum(["a1"] * 11) # 11 string
+        assert False, "Should raise error for >10 strings"
+    except ValueError:
+        pass
+
+def test_long_string():
+    try:
+        max_digit_sum(["a1b2c3d4e5f6g"])  # 13 character
+        assert False, "Should raise error for string >12 chars"
+    except ValueError:
+        pass
+        
 
 if __name__ == '__main__':
     import pytest
