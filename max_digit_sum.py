@@ -1,7 +1,7 @@
 # max_digit_sum.py
 '''
 Find Max Sum
-Please submit by 21:03
+
 Given an array of strings, each made up of a combination of letters and digits, write the functionality to find and return the largest sum of digits within a string.
 
 Considering a variety of different input arrays, state any assumptions or design choices you had to make.
